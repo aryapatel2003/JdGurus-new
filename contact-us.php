@@ -1,42 +1,47 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	// Collect the form data and sanitize it
-	$name = htmlspecialchars(trim($_POST['firstname']));
-	$email = htmlspecialchars(trim($_POST['email']));
-	$number = htmlspecialchars(trim($_POST['number']));
-	$product = htmlspecialchars(trim($_POST['Product']));
-	$industryType = htmlspecialchars(trim($_POST['IndustryType']));
-	$businessName = htmlspecialchars(trim($_POST['BusinessName']));
-	$message = htmlspecialchars(trim($_POST['message']));
+	// Collect form data
+	$name = htmlspecialchars($_POST['firstname']);
+	$email = htmlspecialchars($_POST['email']);
+	$number = htmlspecialchars($_POST['number']);
+	$product = htmlspecialchars($_POST['Product']);
+	$industryType = htmlspecialchars($_POST['IndustryType']);
+	$businessName = htmlspecialchars($_POST['BusinessName']);
+	$message = htmlspecialchars($_POST['message']);
 
-	// Set the recipient email address
-	$to = "jatin@jdgurus.com";
+	// Validate email
+	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		echo "Invalid email format";
+		exit;
+	}
 
-	// Set the subject
-	$subject = "New Contact Us Form Submission";
+	// Recipient email
+	$to = "jatin@jdgurus.com"; // Replace with your company email
 
-	// Construct the email body
-	$body = "You have received a new message from your Contact Us form:\n\n";
-	$body .= "Full Name: $name\n";
-	$body .= "Email: $email\n";
-	$body .= "Phone Number: $number\n";
-	$body .= "Product: $product\n";
-	$body .= "Industry Type: $industryType\n";
-	$body .= "Business Name: $businessName\n";
-	$body .= "Message:\n$message\n";
+	// Email subject
+	$subject = "New Contact Form Submission";
 
-	// Set the email headers
+	// Email content
+	$body = "You have received a new message from the contact form on your website.\n\n" .
+		"Full Name: $name\n" .
+		"Email: $email\n" .
+		"Phone Number: $number\n" .
+		"Product: $product\n" .
+		"Industry Type: $industryType\n" .
+		"Business Name: $businessName\n" .
+		"Message: $message\n";
+
+	// Additional headers
 	$headers = "From: $email\r\n";
 	$headers .= "Reply-To: $email\r\n";
-	$headers .= "X-Mailer: PHP/" . phpversion();
 
 	// Send the email
 	if (mail($to, $subject, $body, $headers)) {
-		echo "Thank you for contacting us! We will get back to you soon.";
+		echo "Message sent successfully!";
 	} else {
-		echo "Sorry, there was an error sending your message. Please try again later.";
+		echo "Message sending failed.";
 	}
 } else {
-	echo "Invalid request.";
+	echo "Invalid request";
 }
 ?>
