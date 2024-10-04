@@ -89,11 +89,10 @@
 	</section>
 
 	<!-- Claint Logo  start-->
-	<section class="sponsors-section pb-5 mb-5 pt-0">
+	<!-- <section class="sponsors-section pb-5 mb-5 pt-0">
 		<div class="auto-container">
 
 			<div class="carousel-outer">
-				<!--Sponsors Slider-->
 				<ul class="sponsors-carousel owl-carousel owl-theme">
 					<li>
 						<div class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></div>
@@ -151,7 +150,7 @@
 		<script src="js/map-script.js"></script>
 		<script src="js/isotope.js"></script>
 		<script src="js/jquery-ui.js"></script>
-	</section>
+	</section> -->
 
 	<!--  Claint Logo  End -->
 
@@ -297,7 +296,7 @@
 							<div class="image-column col-lg-3 col-md-4 col-sm-12">
 								<div class="inner-column ">
 									<div class="image people-img">
-										<img src="images/resource/author-5.jpg" alt="" />
+										<img src="images/resource/Jatin-Patel.jpeg" alt="" />
 									</div>
 								</div>
 							</div>
@@ -305,8 +304,8 @@
 							<div class="content-column col-lg-9 col-md-8 col-sm-12">
 								<div class="inner-column">
 									<h4 style="color:#ffffff; font-size: 26px; font-weight:700;">Jatin Patel</h4>
-									<div class="designation">President at JD Gurus Inc</div>
-									<div class="b-icon">
+									<div class="designation">President</div>
+									<!-- <div class="b-icon">
 										<div class="social-column ">
 											<ul class="d-flex" style="gap:15px;font-size:30px;margin-top: 10px;">
 												<li><a href="https://www.facebook.com/jdgurus/"><span
@@ -317,7 +316,7 @@
 												<li><a href="#"><span class="fa fa-linkedin-square"></span></a></li>
 											</ul>
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -332,16 +331,16 @@
 							<div class="image-column col-lg-3 col-md-4 col-sm-12">
 								<div class="inner-column">
 									<div class="image people-img">
-										<img src="images/resource/author-5.jpg" alt="" />
+										<img src="images/resource/Lalit-Parikh.jpg" alt="" />
 									</div>
 								</div>
 							</div>
 							<!-- Content Column -->
 							<div class="content-column col-lg-9 col-md-8 col-sm-12">
 								<div class="inner-column">
-									<h4 style="color:#ffffff; font-size: 26px; font-weight:700;">Lalit Patel</h4>
-									<div class="designation">Operational Manager</div>
-									<div class="b-icon">
+									<h4 style="color:#ffffff; font-size: 26px; font-weight:700;">Lalit Parikh</h4>
+									<div class="designation">Chief Operating Officer</div>
+									<!-- <div class="b-icon">
 										<div class="social-column">
 											<ul>
 												<li><a href="https://www.facebook.com/jdgurus/"><span
@@ -352,7 +351,7 @@
 												<li><a href="#"><span class="fa fa-linkedin-square"></span></a></li>
 											</ul>
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>

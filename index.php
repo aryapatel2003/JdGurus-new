@@ -286,10 +286,9 @@
 <!-- End Gallery Section -->
 
 <!-- Claint Logo  start-->
-<section class="sponsors-section">
+<!--<section class="sponsors-section">
 	<div class="auto-container">
 		<div class="carousel-outer">
-			<!--Sponsors Slider-->
 			<ul class="sponsors-carousel owl-carousel owl-theme">
 				<li>
 					<div class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></div>
@@ -331,7 +330,7 @@
 		</div>
 
 	</div>
-</section>
+</section> -->
 
 <!--  Claint Logo  End -->
 
@@ -341,8 +340,6 @@
 		<div class="sec-title centered">
 			<h2>Perfect POS software for most retail stores</h2>
 		</div>
-
-
 
 		<div class="row clearfix">
 			<!-- Services Block Fourteen -->

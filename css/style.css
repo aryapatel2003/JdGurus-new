@@ -7133,9 +7133,8 @@ img {
 
 .testimonial-section-two .owl-nav .owl-prev:hover,
 .testimonial-section-two .owl-nav .owl-next:hover {
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #065591;
-  /* background-color: #4659e2; */
 }
 
 .testimonial-block-three {
